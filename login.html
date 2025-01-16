@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="header">
+    </div>
+    <h1>Thank You</h1>
+    <h2>Now You Have Verified</h2>
+    <p class="description">
+      We are glad to serve you warm meals.<br>
+      Please <strong>log in</strong> to continue.
+    </p>
+    <div class="image-container">
+      <img src="/img/login" alt="Food Image">
+    </div>
+    <button id="loginButton" class="btn-login btn-disabled" disabled>LOGIN</button>
+    <button class="back-button" onclick="window.location.href='FoodShare.html'">BACK</button>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginButton = document.getElementById("loginButton");
+      const isVerified = localStorage.getItem("isVerified") === "true";
+
+      if (isVerified) {
+        loginButton.disabled = false;
+        loginButton.classList.remove("btn-disabled");
+        loginButton.classList.add("btn-enabled");
+
+        loginButton.addEventListener("click", () => {
+          alert("Login successful!");
+          window.location.href = "login2.html";
+        });
+      } else {
+        loginButton.disabled = true;
+        loginButton.classList.remove("btn-enabled");
+        loginButton.classList.add("btn-disabled");
+      }
+    });
+  </script>
+</body>
+</html>

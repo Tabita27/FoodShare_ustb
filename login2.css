@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+
+  /* Login Form */
+  .login-form {
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top:30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .login-form h1 {
+    font-size: 24px;
+    color: #7b61ff;
+    margin-bottom: 50px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5e8ff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .input-container i {
+    margin-right: 20px;
+    color: #7b61ff;
+  }
+  
+  .input-container input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: #7b61ff;
+  }
+  
+  .forgot-password {
+    padding-left: 250px;
+    display: block;
+    margin: 30px 0;
+    font-size: 12px;
+    color: #7b61ff;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    background-color: #7b61ff;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .login-button:hover {
+    background-color: #624edf;
+  }
+  
+  /* Divider */
+  .or-divider {
+    font-size: 14px;
+    color: #7b61ff;
+    margin: 5px 0;
+  }
+  
+  /* Social Login */
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .google-button {
+    background-color: #db4437;
+  }
+
+  .facebook-button {
+    background-color: #4267B2;
+  }
+
+  .social-login i {
+    margin-right: 10px;
+  }

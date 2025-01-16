@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbeaff;
+    color: #333;
+}
+
+.foodplan-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 420px;
+    background: #efe2fc;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.header i {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #6c63ff;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.food-list {
+    text-align: left;
+}
+
+.food-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 14px;
+    color: #202020;
+    margin: 10px 0;
+}
+
+.food-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.food-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column; /* Susunan vertikal */
+    align-items: flex-end; /* Rata di sudut kanan */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    gap: 20px; /* Jarak antar ikon */
+}
+.actions img{
+    width: 20px;
+    padding-left: 50px;
+}
+
+.actions i {
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.actions i:hover {
+    color: #333;
+}
+
+.food-item {
+    position: relative; /* Untuk memungkinkan ikon diatur di sudut kanan */
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-options button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 48%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-options button img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.delivery-options button:hover {
+    background-color: #45a049;
+}
+
+.actions pesan{
+    cursor: pointer;
+}

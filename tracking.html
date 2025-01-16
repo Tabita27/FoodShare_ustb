@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Tracking</title>
+    <link rel="stylesheet" href="/css/tracking.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="tracking-container">
+        <!-- Header -->
+        <header>
+            <i onclick="window.location.href='dashboard.html'"class ="fas fa-arrow-left"></i>
+            <h1>Tracking</h1>
+            <button class="notification-btn">&#128276;</button>
+        </header>
+
+        <!-- Informasi Driver -->
+        <div class="driver-info">
+            <img src="/img/dr.jpeg" alt="Driver Profile">
+            <span class="driver-name">John Bambang Batukak</span>
+        </div>
+
+        <!-- Peta -->
+        <div id="map"></div>
+
+        <!-- Detail Tracking -->
+        <div class="tracking-details">
+            <p>Driver akan sampai dalam <b id="eta">2</b> menit</p>
+            <p>Plat Nomor: <b>BK 5870 EH</b></p>
+            <p>Driver Rating:</p>
+            <div class="rating-section">
+                <img src="https://img.icons8.com/color/48/000000/star.png" alt="Star">
+                <span class="rating">5.0</span>
+            </div>
+
+            <!-- Tombol Aksi -->
+            <div class="icon-container">
+                <button class="phone-btn">
+                    <img src="https://img.icons8.com/ios/50/phone.png" alt="Telepon">
+                </button>
+                <button class="contact-driver">Kirim chat ke driver</button>
+                <button class="message-btn">
+                    <img src="https://img.icons8.com/ios/50/chat.png" alt="Pesan">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

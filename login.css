@@ -1,0 +1,99 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container untuk halaman login */
+.login-container {
+  width: 100%;
+  max-width: 360px; /* Lebar maksimal seperti perangkat seluler */
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: left;
+}
+
+.back-button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #6a5acd;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+h1 {
+  font-size: 24px;
+  color: #000;
+}
+
+h2 {
+  font-size: 18px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.image-container {
+  margin: 20px 0;
+}
+
+.image-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn-login {
+  width: 100%; /* Lebar tombol sesuai dengan kontainer */
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-login.btn-disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.btn-login.btn-enabled {
+  background-color: #6a5acd;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsif untuk memastikan tampilan serupa di semua perangkat */
+@media (min-width: 768px) {
+  .login-container {
+    margin: 40px auto;
+  }
+}
+
+

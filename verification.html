@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification</title>
+  <link rel="stylesheet" href="/css/verif.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="status-bar">
+      <div class="icons">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="circle-header">
+        <h2>Hi, You Have to Verify</h2>
+      </div>
+
+      <form class="verification-form" onsubmit="handleVerification(event)">
+        <input type="email" id="verification-email" placeholder="Email" required>
+        <input type="password" id="verification-password" placeholder="Password" required>
+        <select id="verification-institution" required>
+          <option value="" disabled selected>Select Institution</option>
+          <option value="restaurant">Restaurant</option>
+          <option value="social-agency">Social Agency</option>
+        </select>
+        <input type="tel" placeholder="Phone Number" required>
+        <label class="file-input">
+          <span>Supporting Document</span>
+          <input type="file" accept=".pdf,.jpg,.png" required>
+        </label>
+        <button type="submit" class="register-btn" a href="login.html">REGISTER</button>
+        <button class="back-button" onclick="window.location.href='login2.html'">BACK</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function handleVerification(event) {
+      event.preventDefault(); // Prevent page reload
+
+      // Save verification details to localStorage
+      const email = document.getElementById('verification-email').value;
+      const password = document.getElementById('verification-password').value;
+      const institution = document.getElementById('verification-institution').value;
+
+      localStorage.setItem("isVerified", "true");
+      localStorage.setItem("verifiedEmail", email);
+      localStorage.setItem("verifiedPassword", password);
+      localStorage.setItem("verifiedInstitution", institution);
+
+      alert("Registration successful! You can now log in.");
+      window.location.href = "login.html"; // Redirect to login page
+    }
+  </script>
+</body>
+
+</html>

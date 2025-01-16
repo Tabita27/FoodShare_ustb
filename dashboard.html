@@ -1,0 +1,62 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="status-bar">
+        <span class="time">9:41</span>
+        <div class="icons">
+          <span>📶</span>
+          <span>🔋</span>
+        </div>
+      </div>
+      <h1 class="app-title">FoodShare</h1>
+      <button class="bell-icon">🔔</button>
+      <p class="welcome-message">Hi PantiAsuhan Bahagia, now you can have a warm meal for your food </p>
+      <div class="top-icons">
+        <input type="text" placeholder="Search 🍴" class="search-bar ">
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <h2 class="instruction">Click <strong>Order Your Meal</strong> for your order and enjoy warm lunch or dinner at your home</h2>
+      <div class="action-grid">
+        <div class="action-item">
+          <button class="action-button">
+            <img src="/img/donasi.png" onclick="window.location.href='foodplan.html'"alt="Order Your Meal">
+            <p>Order your meal</p>
+          </button>
+        </div>
+        <div class="action-item">
+          <button class="action-button">
+            <img src="/img/track" onclick="window.location.href='tracking.html'"alt="Track Delivery">
+
+            <p>Track Delivery</p>
+          </button>
+        </div>
+        <div class="action-item">
+          <button class="action-button">
+            <img src="/img//rating" onclick="window.location.href='rating.html'"alt="Track Delivery">
+            <p>Give your rating</p>
+          </button>
+        </div>
+        <div class="action-item">
+          <button class="action-button">
+            <img src="/img/delivery" onclick="window.location.href='foodpickup.html'" alt="Food Pickup">
+            <p>Food pickup</p>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

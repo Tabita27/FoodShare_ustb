@@ -1,0 +1,185 @@
+/* Reset default styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5;
+}
+
+/* Container utama */
+.tracking-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #f3e5f5;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #d7b1d5;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .back-btn, 
+header .notification-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* Informasi driver */
+.driver-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.driver-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #d7b1d5;
+}
+
+.driver-info .driver-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Peta */
+#map {
+    flex: 1;
+    width: 120%;
+    height: 250px;
+    border-radius: 15px;
+    margin: 0 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Detail tracking */
+.tracking-details {
+    background-color: #9de49d;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.tracking-details .rating-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tracking-details .rating-section img {
+    width: 20px;
+    height: 20px;
+}
+
+.tracking-details .rating-section .rating {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Tombol aksi */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Jarak antar elemen */
+    margin-top: 10px;
+}
+
+/* Tombol telepon dan pesan */
+.icon-container button {
+    background-color: rgb(243, 243, 243);
+    border: none;
+    padding: 10px;
+    border-radius: 3%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.icon-container button img {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-container button:hover {
+    background-color: #d2d2d2;
+}
+
+/* Tombol utama (Kirim chat ke driver) */
+.contact-driver {
+    flex-grow: 1; /* Membuat tombol mengisi ruang di antara ikon */
+    background-color: #f13131;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-driver:hover {
+    background-color: #ff0000;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .driver-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    .tracking-details {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tracking-details {
+        font-size: 0.8rem;
+    }
+
+    .contact-driver {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+}
